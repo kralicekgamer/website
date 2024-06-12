@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.web {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.web-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.web-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.web-header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.wrapper > div {
+    background-color: #e7e7e7;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper > div h2 {
+    margin-top: 0;
+}
+
+.wrapper > div ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.wrapper > div ul li {
+    margin: 10px 0;
+}
+
+.wrapper > div ul li a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.wrapper > div ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.wrapper-vietcong-donwload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    border: 2px solid #0073e6;
+    border-radius: 10px;
+    background-color: #0073e6;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.wrapper-vietcong-donwload-bnt {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    transition: color 0.3s;
+}
+
+.wrapper-vietcong-donwload:hover {
+    background-color: #005bb5;
+    border-color: #005bb5;
+}
+
+.wrapper-vietcong-donwload-bnt:hover {
+    color: #e0e0e0;
+}
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .wrapper > div {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    .web-header h1 {
+        font-size: 2em;
+    }
+
+    .wrapper-vietcong-donwload {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .web-header h1 {
+        font-size: 1.5em;
+    }
+
+    .wrapper > div {
+        padding: 15px;
+    }
+
+    .wrapper > div ul li a {
+        font-size: 1em;
+    }
+
+    .wrapper-vietcong-donwload {
+        width: 100%;
+        height: 40px;
+    }
+
+    .wrapper-vietcong-donwload-bnt {
+        font-size: 16px;
+        line-height: 40px;
+    }
+}

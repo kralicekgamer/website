@@ -14,18 +14,18 @@ body {
 nav {
     display: flex;
     justify-content: flex-end;
-    padding-right: 43px;
+    padding-right: 42px;
     font-size: 17px;
     font-family: 'Mulish', sans-serif;
 }
 
 article {
-    margin-left: 43px;
+    margin-left: 42px;
     flex: 1; 
 }
 
 h1 {
-    padding-left: 43px;
+    padding-left: 42px;
     font-size: 40px;
     font-family: 'Dancing Script', sans-serif;
 }
@@ -87,8 +87,8 @@ footer {
 }
 
 #header > nav {
-    padding-top: 43px;
-    padding-bottom: 43px;
+    padding-top: 42px;
+    padding-bottom: 44px;
 }
 
 #socials > ul {

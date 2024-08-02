@@ -1,122 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>kralyk.dev</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KralicekGamer's personal website covering Vietcong, Python projects, Minecraft, Zombicide, and more.">
-    <meta name="keywords" content="KralicekGamer, gaming, Vietcong, Python, Minecraft, Zombicide, projects, vietcong, vietcong download, social media, kralicek, kralik, nejsem online, YouTube, Instagram, sociální sítě, gaming, YouTuber, influencer, streamer, linktree, odkazy, kralyk, kralyk.dev, developer, kralicekdev">
-    <meta name="author" content="KralicekGamer">
+    <meta name="description" content="Personal website of Matěj Adamec know as KralicekGamer or Kralyk">
+    <meta name="keywords" content="kralicekgamer, kralyk, kralyk.dev, matěj adamec, matej adamec, portfolio, programator, web development, python, html, css, socials, links, kralicekgamer web, developer, gaming">
+    <meta name="author" content="Matěj Adamec">
+    <title>Matěj Adamec</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./frontend/image/profile.jpg" type="image/x-icon">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <article class="article">
-        <header class="header">
-            <h1 onclick="window.open('./index.html', '_self')">
-                KralicekGamer
-            </h1>
-        </header>
-        <section class="section">
-            <div>
-                <h2>
-                    Vietcong
-                </h2>
-                <ul>
-                    <li>
-                        <p onclick="window.open('https://vietcong.kralyk.dev')">Website</p>
-                    </li>
-                    <li>
-                        <p onclick="window.open('./vietcong_game.html', '_self')">Game download</p>
-                    </li>
-                    <li>
-                        <p onclick="window.open('./vietcong_maps.html', '_self')">Maps</p>
-                    </li>
-                    <li>
-                        <p onclick="window.open('./vietcong_addons.html', '_self')">Addons</p>
-                    </li>
-                    <li>
-                        <p onclick="window.open('./vietcong_comhub.html', '_self')">VcComHub</p>
-                    </li>
-                    <li>
-                        <p onclick="window.open('https://floxen.lol')">Server</p>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2>
-                    Python
-                </h2>
-                <ul>
-                    <li>
-                        <p onclick="window.open('https://github.com/kralicekgamer/python_colors')">Python colors</p>
-                    </li>
-                    <li>
-                        <p onclick="window.open('./python_projects.html', '_self')">Some projects..</p>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2>
-                    Minecraft
-                </h2>
-                <ul>
-                    <li>
-                        <p onclick="window.open('./minecraft_modpack.html', '_self')">Modpacks</p>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2>
-                    Zombicide
-                </h2>
-                <ul>
-                    <li>
-                        <p onclick="window.open('https://zombicide.kralyk.dev')">Website</p>
-                    </li>
-                    <li>
-                        <p onclick="window.open('https://github.com/kralicekgamer/zombicide_custom')">Maps</p>
-                    </li>
-                    <li>
-                        <p onclick="window.open('https://github.com/kralicekgamer/bgmapeditor_languages')">More
-                            languages</p>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2>
-                    Socials
-                </h2>
-                <ul>
-                    <li>
-                        <p onclick="window.open('https://github.com/KralicekGamer')">GitHub</p>
-                    </li>
-                    <li>
-                        <p onclick="window.open('https://www.instagram.com/def_kralicekgamer')">Instagram</p>
-                    </li>
-                    <li>
-                        <p onclick="window.open('https://www.instagram.com/kralicekgamer')">Instagram - private</p>
-                    </li>
-                    <li>
-                        <p onclick="window.open('https://www.youtube.com/@kralicekgamer')">YouTube</p>
-                    </li>
-                    <li>
-                        <p onclick="window.open('https://eu.zonerama.com/kralicekgamer/')">Zonerama</p>
-                    </li>
-                    <li>
-                        <p onclick="window.open('https://www.paypal.com/paypalme/kralicekgamer')">PayPal</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <footer class="footer">
-            <p>
-                (C)2024 by KralicekGamer
-            </p>
-        </footer>
-    </article>
+    <header id="header">
+        <nav>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            <ul class="menu">
+                <li>
+                    <a href="./about.html">About me</a>
+                </li>
+                <li>
+                    <a href="./skills.html">Skills</a>
+                </li>
+                <li>
+                    <a href="./projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="./socials.html">Socials</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+                <li id="home">
+                    <a href="./index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>
+            <a href="./index.html">Matěj Adamec</a>
+        </h1>
+        <nav id="quick-links">
+            <ul>
+                <li>
+                    <a href="https://github.com/KralicekGamer" target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/def_kralicekgamer" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@kralicekgamer" target="_blank">Youtube</a>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+    <script src="script.js"></script>   
 </body>
-
 </html>

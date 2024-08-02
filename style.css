@@ -175,6 +175,40 @@ footer {
     h1 {
         padding-left: 20px;
     }
+
+    #socials {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    
+    #socials > ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #socials > ul li {
+        border: black solid 1px;
+        border-radius: 69px;
+        width: 270px;
+        height: 40px;
+        margin: 5px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #socials > ul li:hover {
+        background-color: rgb(226, 226, 226);
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 400px) {

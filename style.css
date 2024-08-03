@@ -19,7 +19,7 @@ nav {
     font-family: 'Mulish', sans-serif;
 }
 
-article {
+section {
     margin-left: 42px;
     flex: 1; 
 }
@@ -171,7 +171,7 @@ footer {
         transform: translateX(0);
     }
 
-    article {
+    section {
         margin-left: 20px;
         margin-right: 20px;
     }

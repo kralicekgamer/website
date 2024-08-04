@@ -38,7 +38,7 @@ nav > ul {
     margin: 0; 
 }
 
-li > a {
+nav > ul  li a {
     color: black;
     position: relative;
     display: inline-block;

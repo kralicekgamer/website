@@ -213,6 +213,10 @@ footer {
         background-color: rgb(226, 226, 226);
         cursor: pointer;
     }
+
+    #onion {
+        display: none;
+    }
 }
 
 @media (max-width: 400px) {
@@ -223,5 +227,8 @@ footer {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+    #onion {
+        display: none;
     }
 }

@@ -133,6 +133,11 @@ footer {
     display: none;
 }
 
+strong {
+    font-family: 'Roboto Condensed';
+}
+
+
 @media (max-width: 768px) {
     #home {
         display: block;

@@ -171,6 +171,22 @@ strong {
 }
 
 
+#blog-list {
+    padding-right: 35px;
+}
+
+.blog-article {
+    margin-top: 20px;
+    padding-left: 10px;
+    border: #000 solid 1px;
+    border-radius: 15px;
+}
+
+.blog-article a{
+    color: #000;
+}
+
+
 @media (max-width: 768px) {
     #home {
         display: block;

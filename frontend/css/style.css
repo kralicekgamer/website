@@ -39,63 +39,9 @@ body {
     font-family: 'DM Sans', 'Segoe UI', sans-serif;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 42px;
-    font-size: 17px;
-    font-family: 'Mulish', sans-serif;
-}
-
 section {
     margin-left: 42px;
     flex: 1; 
-}
-
-h1 {
-    padding-left: 42px;
-    font-size: 40px;
-    font-family: 'Dancing Script', sans-serif;
-}
-
-nav > ul {
-    display: flex;
-    list-style-type: none;
-    gap: 50px;
-    padding: 0; 
-    margin: 0; 
-}
-
-nav > ul  li a {
-    color: black;
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-}
-
-nav li > a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    transform-origin: bottom right;
-    transition: transform 0.15s ease-out;
-}
-
-nav li > a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-h1 > a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Dancing Script', sans-serif;
-    font-size: 42px;
 }
 
 footer {
@@ -105,57 +51,14 @@ footer {
     font-family: 'Mulish', sans-serif;
 }
 
+strong {
+    font-family: 'Roboto Condensed';
+}
+
+
 .project-links > li a {
     color: blue;
     text-decoration: underline;
-}
-
-#header {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-}
-
-#header > nav {
-    padding-top: 42px;
-    padding-bottom: 42px;
-}
-
-#socials > ul {
-    list-style: none;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-}
-
-#socials  > ul li {
-    border: black solid 1px;
-    border-radius: 69px;
-    width: 270px;
-    height: 40px;
-    margin: 5px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#socials > ul li:hover {
-    background-color: rgb(226, 226, 226);
-    cursor: pointer;
-}
-
-#socials > ul, li a {
-    color: black;
-    text-decoration: none;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .menu-toggle {
@@ -164,132 +67,4 @@ footer {
 
 #home {
     display: none;
-}
-
-strong {
-    font-family: 'Roboto Condensed';
-}
-
-
-#blog-list {
-    padding-right: 35px;
-}
-
-.blog-article {
-    margin-top: 20px;
-    padding-left: 10px;
-    border: #000 solid 1px;
-    border-radius: 15px;
-}
-
-.blog-article a{
-    color: #000;
-}
-
-
-@media (max-width: 768px) {
-    #home {
-        display: block;
-    }
-
-    .navbar {
-        flex-direction: row;
-    }
-
-    .menu-toggle {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 30px;
-        cursor: pointer;
-    }
-
-    .menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        list-style-type: none;
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
-    }
-
-    .menu.show {
-        transform: translateX(0);
-    }
-
-    section {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    h1 {
-        padding-left: 20px;
-    }
-
-    #socials {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-    }
-    
-    #socials > ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    #socials > ul li {
-        border: black solid 1px;
-        border-radius: 69px;
-        width: 270px;
-        height: 40px;
-        margin: 5px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #socials > ul li:hover {
-        background-color: rgb(226, 226, 226);
-        cursor: pointer;
-    }
-
-    #onion {
-        display: none;
-    }
-
-    #blog-list {
-        padding-right: 0px;
-    }
-}
-
-@media (max-width: 400px) {
-    #quick-links {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    #onion {
-        display: none;
-    }
-    #blog-list {
-        padding-right: 0px;
-    }
 }

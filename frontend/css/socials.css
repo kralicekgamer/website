@@ -1,0 +1,33 @@
+#socials {
+    display: flex;
+    margin-left: -8px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#socials > article ul li {
+    border: black solid 1px;
+    border-radius: 69px;
+    width: 270px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#socials > article, ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+#socials > article a {
+    color: black;
+    text-decoration: none;
+}
+
+#socials > article li:hover {
+    background-color: rgb(240, 240, 240);
+}
+

@@ -79,10 +79,6 @@
         cursor: pointer;
     }
 
-    #onion {
-        display: none;
-    }
-
     #blog-list {
         padding-right: 0px;
     }
@@ -96,9 +92,6 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-    }
-    #onion {
-        display: none;
     }
     #blog-list {
         padding-right: 0px;

@@ -39,3 +39,17 @@ li {
 }
 
 
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    color: #2E5077;
+}
+
+.link {
+    color:#2E5077;
+}
+
+.dropdown button {
+    font-size: 20px;
+}

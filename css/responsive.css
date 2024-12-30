@@ -1,16 +1,7 @@
-.link {
-    color:#2E5077;
-}
-
 .dropdown-hamburger {
     display: none;
 }
 
-.nav-links {
-    display: flex;
-    gap: 20px;
-    color: #2E5077;
-}
 
 @media (max-width: 768px) {
     section aside {

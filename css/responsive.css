@@ -13,7 +13,7 @@
 }
 
 @media (max-width: 768px) {
-    aside {
+    section aside {
         display: none;
     }
 

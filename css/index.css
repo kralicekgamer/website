@@ -1,0 +1,14 @@
+#index {
+    display: flex;
+    justify-content: space-between;
+}
+
+#index > article, aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#index a {
+    max-width: 120px;
+}

@@ -6,39 +6,40 @@
     <meta name="description" content="Personal portfolio of developer Matěj Adamec know as KralicekGamer or Kralyk">
     <meta name="keywords" content="kralicekgamer, kralyk, kralyk.dev, matěj adamec, matej adamec, portfolio, programator, web development, python, html, css, socials, links, kralicekgamer web, developer, gaming">
     <meta name="author" content="Matěj Adamec">
-    <title>Matěj Adamec | Contact</title>
-    <link rel="stylesheet" href="frontend/css/style.css">
-    <link rel="stylesheet" href="frontend/css/header.css">
-    <link rel="stylesheet" href="frontend/css/responsive.css">
-    <link rel="icon" href="frontend/img/icon.png" type="image/x-icon">
+
+    <title>Matěj Adamec</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header class="navbar">
+    <header>
         <h1>
-            <a href="./index.html">Matěj Adamec</a>
+            <a href="./index.html">
+                Matěj Adamec
+            </a>
         </h1>
-        <nav>
-            <button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
-            <ul class="menu">
-                <li>
-                    <a href="./about.html">About me</a>
-                </li>
-                <li>
-                    <a href="./skills.html">Skills</a>
-                </li>
-                <li>
-                    <a href="./projects.html">Projects</a>
-                </li>
-                <li>
-                    <a href="./socials.html">Socials</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Contact</a>
-                </li>
-                <li id="home">
-                    <a href="./index.html">Home</a>
-                </li>
-            </ul>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="dropdown dropdown-hamburger" id="dropdown">
+                    <button class="btn" type="button" id="hamburgerMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                        &equiv;
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="hamburgerMenu">
+                        <li><a class="dropdown-item" href="aboutme.html">About Me</a></li>
+                        <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        <li><a class="dropdown-item" href="https://blog.kralyk.dev/" target="_blank">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="nav-links">
+                    <a href="aboutme.html" class="nav-link d-inline">About Me</a>
+                    <a href="https://blog.kralyk.dev/" class="nav-link d-inline" target="_blank">Blog</a>
+                    <a href="projects.html" class="nav-link d-inline">Projects</a>
+                    <a href="contact.html" class="nav-link d-inline">Contact</a>
+                </div>
+            </div>
         </nav>
     </header>
     <section>
@@ -47,16 +48,15 @@
                 Contact
             </h2>
             <p>
-                You can contact me on my email <a href="mailto:kralicekgamer@gmail.com">kralicekgamer@gmail.com</a>
-                or on my <a href="https://www.instagram.com/matej.adamec_/">instagram</a>. I am here for you 24/7.
+                You can concact me via email <a href="mailto:kralicekgamer@gmail.com" class="link">kralicekgamer@gmail.com</a> or on my instagram <a href="https://www.instagram.com/matej.adamec_/" target="_blank" class="link">matej.adamec_</a>
             </p>
         </article>
     </section>
     <footer>
         <p>
-            <small>&copy; 2024 by Matěj Adamec.</small>
+            &copy; 2024 by Matěj Adamec
         </p>
     </footer>
-    <script src="./frontend/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

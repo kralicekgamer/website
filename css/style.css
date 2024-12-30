@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Sans', 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    background-color: #F6F4F0;
+}
+
+
+h1 {
+    margin-right: auto;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #2E5077;
+}
+
+article h2 {
+    color: #2E5077;
+}
+
+img {
+    height: 60px;
+}
+
+p {
+    color:#367379;
+}
+
+li {
+    color:#367379;
+}
+
+

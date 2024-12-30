@@ -6,141 +6,87 @@
     <meta name="description" content="Personal portfolio of developer Matěj Adamec know as KralicekGamer or Kralyk">
     <meta name="keywords" content="kralicekgamer, kralyk, kralyk.dev, matěj adamec, matej adamec, portfolio, programator, web development, python, html, css, socials, links, kralicekgamer web, developer, gaming">
     <meta name="author" content="Matěj Adamec">
-    <title>Matěj Adamec | Projects</title>
-    <link rel="stylesheet" href="frontend/css/style.css">
-    <link rel="stylesheet" href="frontend/css/header.css">
-    <link rel="stylesheet" href="frontend/css/responsive.css">
-    <link rel="icon" href="frontend/img/icon.png" type="image/x-icon">
+
+    <title>Matěj Adamec</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header class="navbar">
+    <header>
         <h1>
-            <a href="./index.html">Matěj Adamec</a>
+            <a href="./index.html">
+                Matěj Adamec
+            </a>
         </h1>
-        <nav>
-            <button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
-            <ul class="menu">
-                <li>
-                    <a href="./about.html">About me</a>
-                </li>
-                <li>
-                    <a href="./skills.html">Skills</a>
-                </li>
-                <li>
-                    <a href="./projects.html">Projects</a>
-                </li>
-                <li>
-                    <a href="./socials.html">Socials</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Contact</a>
-                </li>
-                <li id="home">
-                    <a href="./index.html">Home</a>
-                </li>
-            </ul>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="dropdown dropdown-hamburger" id="dropdown">
+                    <button class="btn" type="button" id="hamburgerMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                        &equiv;
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="hamburgerMenu">
+                        <li><a class="dropdown-item" href="aboutme.html">About Me</a></li>
+                        <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        <li><a class="dropdown-item" href="https://blog.kralyk.dev/" target="_blank">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="nav-links">
+                    <a href="aboutme.html" class="nav-link d-inline">About Me</a>
+                    <a href="https://blog.kralyk.dev/" class="nav-link d-inline" target="_blank">Blog</a>
+                    <a href="projects.html" class="nav-link d-inline">Projects</a>
+                    <a href="contact.html" class="nav-link d-inline">Contact</a>
+                </div>
+            </div>
         </nav>
     </header>
     <section>
         <article>
             <h2>
-                Projects
+                Napycu website
             </h2>
-
-            <h3>
-                PyCodeUpdater
-            </h3>
             <ul>
                 <li>
-                    <strong>Description:</strong> PyCodeUpdater is a tool that checks your version of the code
-                    against the version on the internet and updates it if a newer version is available.
+                    This is random website with my stupid ideas. 
                 </li>
                 <li>
-                    <strong>Technologies Used:</strong> Python
-                </li>
-                <li>
-                    <strong>GitHub:</strong> <a href="https://github.com/kralicekgamer/PyCodeUpdater"></a>PyCodeUpdater
+                    <a href="https://napycu.kralyk.dev/" class="link">napycu.kralyk.dev</a>
                 </li>
             </ul>
-            <h3>
-                BgMapEditor Modifications
-            </h3>
+        </article>
+        <article>
+            <h2>
+                BgMapEditor Modifications 
+            </h2>
             <ul>
                 <li>
-                    <strong>Description:</strong> This project involves modifying and improving the BgMapEditor. My
-                    contributions include bug fixes and the addition of a helper installation feature to make the
-                    editor more user-friendly.
+                    This is a modification of BgMapEditor. 
                 </li>
                 <li>
-                    <strong>Technologies Used:</strong> Python, HTML, and extensive use of Perl (with the help of
-                    Google for learning and understanding Perl code).
+                    <a href="https://github.com/kralicekgamer/bgmapeditor" class="link">GitHub</a>
                 </li>
-                <li>
-                    <strong>GitHub:</strong> <a href="https://github.com/kralicekgamer/bgmapeditor"></a>PyCodeUpdater
-                </li>
-            </ul>
-            <h3>
-                PySSH
-            </h3>
+        </article>
+        <article>
+            <h2>
+                ZombicideCustom
+            </h2>
             <ul>
                 <li>
-                    <strong>Description:</strong> A Python-based SSH connector.
+                    Zombicide scenarios and custom maps. Project with my friend.
                 </li>
                 <li>
-                    <strong>Technologies Used:</strong> Python
-                </li>
-                <li>
-                    <strong>GitHub:</strong> <a href="https://github.com/kralicekgamer/PySSH"></a>PySSH
+                    <a href="https://zombicide.eu" class="link">zombicide.eu</a>
                 </li>
             </ul>
-            <h3>
-                Vietcong - modifications, website etc.
-            </h3>
-            <ul>
-                <li>
-                    Vietcong is a video game on which I have my own website where there is more info about this game
-                </li>
-                <li>
-                    Here are just a few important links:
-                    <ul class="project-links">
-                        <li>
-                            <a href="https://vietcong.kralyk.dev/" target="_blank">Website</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/pavelkalas/vccomhub" target="_blank">VcComHub download</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <h3>
-                Zombicide Custom
-            </h3>
-            <ul>
-                <li>
-                    Zombicide custom is a project that focuses on making scenarios for zombicide
-                </li>
-                <li>
-                    Here are few important links:
-                    <ul class="project-links">
-                        <li>
-                            <a href="https://zombicide.kralyk.dev/">Website</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/kralicekgamer/zombicide_custom">GitHub</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <p>
-                Other projects I haven't mentioned here can be found on my <a href="https://github.com/kralicekgamer/">GitHub</a>
-            </p>
         </article>
     </section>
     <footer>
         <p>
-            <small>&copy; 2024 by Matěj Adamec.</small>
+            &copy; 2024 by Matěj Adamec
         </p>
     </footer>
-    <script src="./frontend/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

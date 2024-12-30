@@ -1,0 +1,27 @@
+.link {
+    color:#2E5077;
+}
+
+.dropdown-hamburger {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    color: #2E5077;
+}
+
+@media (max-width: 768px) {
+    aside {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .dropdown-hamburger {
+        display: block; 
+    }
+}

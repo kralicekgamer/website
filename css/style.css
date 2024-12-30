@@ -40,7 +40,7 @@ li {
 
 
 
-.nav-links {
+.nav-links, .dropdown-menu li a {
     display: flex;
     gap: 20px;
     color: #2E5077;
@@ -51,5 +51,6 @@ li {
 }
 
 .dropdown button {
-    font-size: 20px;
+    font-size: 1.5em; 
+    color: #2E5077;
 }

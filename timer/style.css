@@ -1,0 +1,12 @@
+html, body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#timer {
+    font-family: Inter;
+    font-size: 120px;
+}

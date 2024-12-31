@@ -8,8 +8,8 @@ const countdown = () => {
     const hour = minute * 60;
 
     const textHour = Math.floor(gap / hour);
-    const textMinute = Math.floor((gap % hour) / minute);
-    const textSecond = Math.floor((gap % minute) / second);
+    const textMinute = String(Math.floor((gap % hour) / minute)).padStart(2, '0');
+    const textSecond = String(Math.floor((gap % minute) / second)).padStart(2, '0');
 
     document.getElementById('hours').innerText = textHour;
     document.getElementById('minutes').innerText = textMinute;

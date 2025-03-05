@@ -26,16 +26,17 @@ article h2 {
     color: #2E5077;
 }
 
-img {
-    height: 60px;
-}
-
 p {
     color:#367379;
 }
 
 li {
     color:#367379;
+}
+
+svg {
+    fill: #2E5077;
+    width: 60px;
 }
 
 

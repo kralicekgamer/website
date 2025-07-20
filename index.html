@@ -1,74 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio of developer Matěj Adamec know as KralicekGamer or Kralyk">
-    <meta name="keywords" content="kralicekgamer, kralyk, kralyk.dev, matěj adamec, matej adamec, portfolio, programator, web development, python, html, css, socials, links, kralicekgamer web, developer, gaming">
-    <meta name="author" content="Matěj Adamec">
-
     <title>Matěj Adamec</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>
-            <a href="./index.html">
-                Matěj Adamec
-            </a>
-        </h1>
-        <nav class="navbar">
-            <div class="container-fluid">
-                <div class="dropdown dropdown-hamburger">
-                    <button class="btn" type="button" id="hamburgerMenu" data-bs-toggle="dropdown" aria-expanded="false">
-                        &equiv;
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="hamburgerMenu">
-                        <li><a class="dropdown-item" href="aboutme.html">About Me</a></li>
-                        <li><a class="dropdown-item" href="projects.html">Projects</a></li>
-                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-                        <li><a class="dropdown-item" href="https://blog.kralyk.dev/" target="_blank">Blog</a></li>
-                    </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Matěj Adamec</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://blog.kralyk.dev/" target="_blank">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="fade-in">Hi, I am <span class="highlight">Matěj</span></h1>
+                        <p class="subtitle fade-in">Developer & Tech Enjoyer from Czech Republic</p>
+                        <p class="lead fade-in">I specialize in <strong>Python</strong>, web development and <strong>cybersecurity</strong>.</p>
+                        <div class="mt-4 fade-in">
+                            <a href="#projects" class="btn btn-primary-custom me-3">My projects</a>
+                            <a href="#contact" class="btn btn-outline-custom">Contact me</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="nav-links">
-                    <a href="aboutme.html" class="nav-link d-inline">About Me</a>
-                    <a href="https://blog.kralyk.dev/" class="nav-link d-inline" target="_blank">Blog</a>
-                    <a href="projects.html" class="nav-link d-inline">Projects</a>
-                    <a href="contact.html" class="nav-link d-inline">Contact</a>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-image fade-in">
+                        <i class="fas fa-laptop-code" style="font-size: 15rem; color: var(--primary-color); opacity: 0.1;"></i>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <section id="index">
-        <article>
-            <h2>
-                Hi, I am Matěj Adamec
-            </h2>
-            <p>
-                I am a 15-year-old developer with experience in creating websites using HTML and CSS.
-            </p>
-            <a href="./aboutme.html" class="btn btn-primary" style="background-color: #2E5077; border-color: #2E5077;">
-                About me
-            </a>
-        </article>
-        <aside>
-            <a href="https://instagram.com/matej.adamec_">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-            </a>
-            <a href="https://github.com/kralicekgamer">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-            </a>
-        </aside>
+        </div>
     </section>
-    <footer>
-        <p>
-            &copy; 2024 by Matěj Adamec
-        </p>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="about-text fade-in">
+                        <p>My name is <span class="about-highlight">Matěj Adamec</span>, online known as <span class="about-highlight">KralicekGamer</span> or Kralyk. I'm from the Czech Republic and I mainly develop in <span class="about-highlight">Python</span>, while learning C#. I also create websites using <span class="about-highlight">HTML, CSS and Bootstrap</span>.</p>
+                        
+                        <p>I have a strong interest in <span class="about-highlight">cybersecurity</span> and networking. I enjoy working on projects with <span class="about-highlight">Raspberry Pi and Arduino</span>. I have experience with managing Minecraft servers and plugins.</p>
+                        
+                        <p>Previously, I spent a lot of time <span class="about-highlight">photographing and editing photos</span> - it's still my hobby, but I don't have as much time for it now. In my free time, I enjoy skateboarding and playing video games. In music, I like hardtekk and hardstyle.</p>
+                        
+                        <p>I study IT at <span class="about-highlight">VOŠ, SPŠ and SOŠ Varnsdorf p. o.</span> and I'm constantly improving in new technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title fade-in">Skills</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-category fade-in">
+                        <h4><i class="fas fa-code me-2"></i>Programming</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-category fade-in">
+                        <h4><i class="fas fa-globe me-2"></i>Web Development</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS/SCSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-category fade-in">
+                        <h4><i class="fas fa-server me-2"></i>OS and Hardware</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Windows</span>
+                            <span class="skill-tag">Raspberry Pi</span>
+                            <span class="skill-tag">Arduino</span>
+                            <span class="skill-tag">Networking</span>
+                            <span class="skill-tag">Microcontrollers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-category fade-in">
+                        <h4><i class="fas fa-shield-alt me-2"></i>Security</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Cybersecurity</span>
+                            <span class="skill-tag">Penetration Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Projects</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card fade-in">
+                        <div class="project-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="project-title">Napycu Website</h3>
+                        <p class="project-description">Random website with dumb ideas. All of it is open-source so feel free.</p>
+                        <a href="https://napycu.kralyk.dev" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt me-1"></i>Visit Website
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card fade-in">
+                        <div class="project-icon">
+                            <i class="fas fa-map"></i>
+                        </div>
+                        <h3 class="project-title">BgMapEditor Modifications</h3>
+                        <p class="project-description">Modified version of BgMapEditor with new features and improvements for a better user experience.</p>
+                        <a href="#" class="project-link" target="_blank">
+                            <i class="fab fa-github me-1"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card fade-in">
+                        <div class="project-icon">
+                            <i class="fas fa-dice"></i>
+                        </div>
+                        <h3 class="project-title">ZombicideCustom</h3>
+                        <p class="project-description">Custom scenarios and maps for the game Zombicide. A joint project with a friend for the community of players.</p>
+                        <a href="https://zombicide.eu" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt me-1"></i>Visit Website
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+    <div class="container">
+        <h2 class="section-title fade-in">Contact</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact-info fade-in">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h4>Email</h4>
+                                <a href="mailto:kralyk@kralyk.dev" class="contact-email">kralyk@kralyk.dev</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <h4>Instagram</h4>
+                                <a href="https://instagram.com/kralyk._" class="contact-email" target="_blank">@kralyk._</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/kralicekgamer" class="contact-email" target="_blank">Matěj Adamec</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://status.kralyk.dev/" class="footer-link" target="_blank">Status</a>
+                <a href="https://blog.kralyk.dev/" class="footer-link" target="_blank">Blog</a>
+                <a href="mailto:kralyk@kralyk.dev" class="footer-link">Email</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Matěj Adamec. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

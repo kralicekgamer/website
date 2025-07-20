@@ -43,17 +43,6 @@ document.querySelectorAll('.fade-in').forEach(el => {
     observer.observe(el);
 });
 
-// Add some interactive effects
-document.querySelectorAll('.skill-tag').forEach(tag => {
-    tag.addEventListener('mouseenter', function () {
-        this.style.transform = 'scale(1.1) rotate(2deg)';
-    });
-
-    tag.addEventListener('mouseleave', function () {
-        this.style.transform = 'scale(1) rotate(0deg)';
-    });
-});
-
 // Project cards tilt effect
 document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('mouseenter', function () {

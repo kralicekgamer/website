@@ -4,38 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matěj Adamec</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#home">Matěj Adamec</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://blog.kralyk.dev/" target="_blank">Blog</a>
+                        <a class="nav-link blog-link" href="https://blog.kralyk.dev/">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -44,95 +41,55 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="floating-icon"><i class="fas fa-code"></i></div>
+        <div class="floating-icon"><i class="fab fa-python"></i></div>
+        <div class="floating-icon"><i class="fas fa-microchip"></i></div>
+        <div class="floating-icon"><i class="fab fa-raspberry-pi"></i></div>
+        <div class="floating-icon"><i class="fas fa-shield-alt"></i></div>
+        
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="hero-content">
-                        <h1 class="fade-in">Hi, I am <span class="highlight">Matěj</span></h1>
-                        <p class="subtitle fade-in">Developer & Tech Enjoyer from Czech Republic</p>
-                        <p class="lead fade-in">I specialize in <strong>Python</strong>, web development and <strong>cybersecurity</strong>.</p>
-                        <div class="mt-4 fade-in">
-                            <a href="#projects" class="btn btn-primary-custom me-3">My projects</a>
-                            <a href="#contact" class="btn btn-outline-custom">Contact me</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <div class="hero-image fade-in">
-                        <i class="fas fa-laptop-code" style="font-size: 15rem; color: var(--primary-color); opacity: 0.1;"></i>
-                    </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>Matěj<br>Adamec</h1>
+                    <p class="hero-subtitle">Cybersecurity lover & developer</p>
+                    <p class="hero-description">
+                        Welcome to my portfolio. I am an IT student who enjoys programming, cybersecurity and working with PC hardware.
+                    </p>
+                    <a href="#projects" class="cta-button">
+                        Lookout for projects
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section about">
+    <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title fade-in">About Me</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="about-text fade-in">
-                        <p>My name is <span class="about-highlight">Matěj Adamec</span>, online known as <span class="about-highlight">KralicekGamer</span> or Kralyk. I'm from the Czech Republic and I mainly develop in <span class="about-highlight">Python</span>, while learning C#. I also create websites using <span class="about-highlight">HTML, CSS and Bootstrap</span>.</p>
-                        
-                        <p>I have a strong interest in <span class="about-highlight">cybersecurity</span> and networking. I enjoy working on projects with <span class="about-highlight">Raspberry Pi and Arduino</span>. I have experience with managing Minecraft servers and plugins.</p>
-                        
-                        <p>Previously, I spent a lot of time <span class="about-highlight">photographing and editing photos</span> - it's still my hobby, but I don't have as much time for it now. In my free time, I enjoy skateboarding and playing video games. In music, I like hardtekk and hardstyle.</p>
-                        
-                        <p>I study IT at <span class="about-highlight">VOŠ, SPŠ and SOŠ Varnsdorf p. o.</span> and I'm constantly improving in new technologies.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
-        <div class="container">
-            <h2 class="section-title fade-in">Skills</h2>
             <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="skill-category fade-in">
-                        <h4><i class="fas fa-code me-2"></i>Programming</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">C#</span>
-                            <span class="skill-tag">VS Code</span>
-                        </div>
-                    </div>
+                <div class="col-lg-3">
+                    <h2 class="section-title animate-on-scroll">
+                        About Me
+                        <div class="section-decoration"></div>
+                    </h2>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="skill-category fade-in">
-                        <h4><i class="fas fa-globe me-2"></i>Web Development</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">HTML</span>
-                            <span class="skill-tag">CSS/SCSS</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">Bootstrap</span>
-                            <span class="skill-tag">Git</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="skill-category fade-in">
-                        <h4><i class="fas fa-server me-2"></i>OS and Hardware</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Linux</span>
-                            <span class="skill-tag">Windows</span>
-                            <span class="skill-tag">Raspberry Pi</span>
-                            <span class="skill-tag">Arduino</span>
-                            <span class="skill-tag">Networking</span>
-                            <span class="skill-tag">Microcontrollers</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="skill-category fade-in">
-                        <h4><i class="fas fa-shield-alt me-2"></i>Security</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Cybersecurity</span>
-                            <span class="skill-tag">Penetration Testing</span>
-                        </div>
+                <div class="col-lg-8 offset-lg-1">
+                    <div class="about-content animate-on-scroll">
+                        <p>
+                            Hi! I'm <strong>Matěj Adamec</strong>, known online as <strong>KralicekGamer</strong> or Kralyk, from the Czech Republic.
+                        </p>
+                        <p>
+                            I'm really passionate about <strong>programming in Python</strong>, and I'm currently learning C#. I love building websites using <strong>HTML</strong>, <strong>CSS</strong>, <strong>SCSS</strong>, and <strong>Bootstrap</strong>.
+                        </p>
+                        <p>
+                            My strongest interests lie in <strong>cybersecurity and networking</strong>, which I absolutely love. I have solid experience in <strong>administering and working with Linux and Linux servers</strong>.
+                        </p>
+                        <p>
+                            Beyond that, I enjoy working on projects with <strong>Raspberry Pi</strong> and <strong>Arduino</strong>, and I have experience managing Minecraft servers and plugins. </p>
+                        </p>
+                        <p>
+                            In my free time, I enjoy <strong>skateboarding</strong> and <strong>playing video games</strong>. I'm also a fan of hardtekk and hardstyle music.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -140,44 +97,109 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section projects">
+    <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title fade-in">Projects</h2>
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="project-card fade-in">
-                        <div class="project-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
+                <div class="col-lg-3">
+                    <h2 class="section-title animate-on-scroll">
+                        Projects
+                        <div class="section-decoration"></div>
+                    </h2>
+                </div>
+                <div class="col-lg-8 offset-lg-1">
+                    <div class="project-card animate-on-scroll">
                         <h3 class="project-title">Napycu Website</h3>
-                        <p class="project-description">Random website with dumb ideas. All of it is open-source so feel free.</p>
+                        <p class="project-description">
+                            Random website with my stupid ideas.
+                        </p>
                         <a href="https://napycu.kralyk.dev" class="project-link" target="_blank">
-                            <i class="fas fa-external-link-alt me-1"></i>Visit Website
+                            napycu.kralyk.dev →
                         </a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="project-card fade-in">
-                        <div class="project-icon">
-                            <i class="fas fa-map"></i>
-                        </div>
+                    
+                    <div class="project-card animate-on-scroll">
                         <h3 class="project-title">BgMapEditor Modifications</h3>
-                        <p class="project-description">Modified version of BgMapEditor with new features and improvements for a better user experience.</p>
+                        <p class="project-description">
+                            Modifications for BgMapEditor
+                        </p>
                         <a href="#" class="project-link" target="_blank">
-                            <i class="fab fa-github me-1"></i>GitHub
+                            Open on Github →
+                        </a>
+                    </div>
+                    
+                    <div class="project-card animate-on-scroll">
+                        <h3 class="project-title">ZombicideCustom</h3>
+                        <p class="project-description">
+                            Zombicide scenarios and custom maps. Players for players.
+                        </p>
+                        <a href="https://zombicide.eu" class="project-link" target="_blank">
+                            zombicide.eu →
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="project-card fade-in">
-                        <div class="project-icon">
-                            <i class="fas fa-dice"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h2 class="section-title animate-on-scroll">
+                        Skills
+                        <div class="section-decoration"></div>
+                    </h2>
+                </div>
+                <div class="col-lg-8 offset-lg-1">
+                    <div class="skills-grid">
+                        <div class="skill-item animate-on-scroll">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4 class="skill-title">Python</h4>
+                            <p class="skill-description">Favorite language</p>
                         </div>
-                        <h3 class="project-title">ZombicideCustom</h3>
-                        <p class="project-description">Custom scenarios and maps for the game Zombicide. A joint project with a friend for the community of players.</p>
-                        <a href="https://zombicide.eu" class="project-link" target="_blank">
-                            <i class="fas fa-external-link-alt me-1"></i>Visit Website
-                        </a>
+
+                        <div class="skill-item animate-on-scroll">
+                            <div class="skill-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h4 class="skill-title">Networking</h4>
+                            <p class="skill-description">All about networks</p>
+                        </div>
+
+                        <div class="skill-item animate-on-scroll">
+                            <div class="skill-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4 class="skill-title">Cybersecurity</h4>
+                            <p class="skill-description">Protect people and services</p>
+                        </div>
+                        
+                        <div class="skill-item animate-on-scroll">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h4 class="skill-title">Linux Server Admin</h4>
+                            <p class="skill-description">Managing linux servers</p>
+                        </div>
+
+                        <div class="skill-item animate-on-scroll">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4 class="skill-title">HTML & CSS</h4>
+                            <p class="skill-description">Website DIVNY</p>
+                        </div>
+                        
+                        <div class="skill-item animate-on-scroll">
+                            <div class="skill-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h4 class="skill-title">Arduino & RPi</h4>
+                            <p class="skill-description">Hardware and microcontrollers</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -185,62 +207,108 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact">
-    <div class="container">
-        <h2 class="section-title fade-in">Contact</h2>
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="contact-info fade-in">
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <h4>Email</h4>
-                                <a href="mailto:kralyk@kralyk.dev" class="contact-email">kralyk@kralyk.dev</a>
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h2 class="section-title animate-on-scroll">
+                        Contact
+                        <div class="section-decoration"></div>
+                    </h2>
+                </div>
+                <div class="col-lg-8 offset-lg-1">
+                    <div class="contact-grid">
+                        <div class="contact-item animate-on-scroll">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
                             </div>
+                            <h4 class="contact-title">GitHub</h4>
+                            <a href="https://github.com/kralicekgamer" class="contact-link" target="_blank">
+                                @kralicekgamer
+                            </a>
                         </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                                <h4>Instagram</h4>
-                                <a href="https://instagram.com/kralyk._" class="contact-email" target="_blank">@kralyk._</a>
+                        
+                        <div class="contact-item animate-on-scroll">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
                             </div>
+                            <h4 class="contact-title">Email</h4>
+                            <a href="mailto:kralyk@kralyk.dev" class="contact-link">
+                                kralyk@kralyk.dev
+                            </a>
                         </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i class="fab fa-github"></i>
-                                </div>
-                                <h4>GitHub</h4>
-                                <a href="https://github.com/kralicekgamer" class="contact-email" target="_blank">Matěj Adamec</a>
+                        
+                        <div class="contact-item animate-on-scroll">
+                            <div class="contact-icon">
+                                <i class="fab fa-instagram"></i>
                             </div>
+                            <h4 class="contact-title">Instagram</h4>
+                            <a href="https://instagram.com/kralyk._" class="contact-link" target="_blank">
+                                @kralyk._
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-links">
-                <a href="https://status.kralyk.dev/" class="footer-link" target="_blank">Status</a>
-                <a href="https://blog.kralyk.dev/" class="footer-link" target="_blank">Blog</a>
-                <a href="mailto:kralyk@kralyk.dev" class="footer-link">Email</a>
+                <a href="https://status.kralyk.dev" class="footer-link">Status</a>
+                <a href="mailto:kralyk@kralyk.dev" class="footer-link">Mail</a>
             </div>
-            <div class="footer-copyright">
-                <p>&copy; 2025 Matěj Adamec. Všechna práva vyhrazena.</p>
-            </div>
-        </div>
+            <p class="copyright">
+                &copy; 2025 by Matěj Adamec
+            </p>
+        </div> 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar effects on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Animate on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>

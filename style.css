@@ -227,8 +227,33 @@ body {
 }
 .floating-icon:nth-child(5) {
   top: 80%;
-  right: 25%;
+  right: 35%;
   animation-delay: 3s;
+}
+.floating-icon:nth-child(6) {
+  bottom: 50%;
+  right: 10%;
+  animation-delay: 1.5s;
+}
+.floating-icon:nth-child(7) {
+  top: 30%;
+  left: 5%;
+  animation-delay: 2.5s;
+}
+.floating-icon:nth-child(8) {
+  bottom: 20%;
+  left: 75%;
+  animation-delay: 3.5s;
+}
+.floating-icon:nth-child(9) {
+  top: 20%;
+  right: 30%;
+  animation-delay: 4.5s;
+}
+.floating-icon:nth-child(10) {
+  bottom: 70%;
+  left: 40%;
+  animation-delay: 5.5s;
 }
 
 .section-decoration {

@@ -258,7 +258,12 @@ body {
     &:nth-child(2) { top: 60%; right: 15%; animation-delay: 2s; }
     &:nth-child(3) { top: 40%; left: 80%; animation-delay: 4s; }
     &:nth-child(4) { bottom: 30%; left: 20%; animation-delay: 1s; }
-    &:nth-child(5) { top: 80%; right: 25%; animation-delay: 3s; }
+    &:nth-child(5) { top: 80%; right: 35%; animation-delay: 3s; }
+    &:nth-child(6) { bottom: 50%; right: 10%; animation-delay: 1.5s; }
+    &:nth-child(7) { top: 30%; left: 5%; animation-delay: 2.5s; }
+    &:nth-child(8) { bottom: 20%; left: 75%; animation-delay: 3.5s; }
+    &:nth-child(9) { top: 20%; right: 30%; animation-delay: 4.5s; }
+    &:nth-child(10) { bottom: 70%; left: 40%; animation-delay: 5.5s; }
 }
 
 .section-decoration {

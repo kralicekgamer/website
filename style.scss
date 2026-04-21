@@ -394,60 +394,66 @@ body {
 // Skills Section
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
     margin-top: 3rem;
 }
 
-.skill-item {
-    text-align: center;
-    padding: 2.5rem 1rem;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    @include hover-effect(); // Apply the hover effect mixin
+.skill-category {
+    padding: 1rem 0;
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 0;
-        height: 2px;
-        background: var(--primary-color);
-        transform: translateX(-50%);
-        transition: width 0.4s ease;
-        z-index: 0; // Ensure it's behind content for the second hover effect
-    }
-
-    &:hover::before {
-        width: 40px;
-    }
-
-    &:hover {
-        transform: translateY(-5px);
-    }
-
-    .skill-icon {
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-        color: var(--primary-color);
-        transition: all 0.3s ease;
-    }
-
-    &:hover .skill-icon {
-        transform: scale(1.1);
-        color: var(--secondary-color);
-    }
-
-    .skill-title {
-        font-size: 1.1rem;
+    .skill-category-title {
+        font-size: 1.2rem;
         font-weight: 500;
-        margin-bottom: 0.8rem;
+        margin-bottom: 1.2rem;
+        color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        
+        i {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+        }
     }
 
-    .skill-description {
-        color: var(--secondary-color);
-        font-size: 0.85rem;
-        font-weight: 300;
+    .skill-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            position: relative;
+            padding-left: 1.2rem;
+            margin-bottom: 0.6rem;
+            color: var(--secondary-color);
+            font-size: 0.95rem;
+            
+            &::before {
+                content: '-';
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: var(--primary-color);
+                font-weight: bold;
+                transition: transform 0.2s ease-in-out;
+            }
+
+            &:hover {
+                color: var(--primary-color);
+
+                &::before {
+                    transform: translateX(3px);
+                }
+            }
+
+            .skill-detail {
+                font-size: 0.85rem;
+                opacity: 0.7;
+                font-style: italic;
+                margin-left: 0.3rem;
+            }
+        }
     }
 }
 
@@ -494,7 +500,7 @@ body {
     }
 
     &:hover .contact-icon {
-        transform: scale(1.2) rotate(5deg);
+        transform: scale(1.2);
         color: var(--secondary-color);
     }
 

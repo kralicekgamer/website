@@ -329,6 +329,89 @@ body {
 }
 
 // Projects Section
+.projects-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+    color: var(--text-secondary);
+
+    p { margin: 0; }
+}
+
+.project-index-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    &:hover { color: var(--accent-color-hover); }
+    i { margin-left: 0.35rem; font-size: 0.8rem; }
+}
+
+.project-group {
+    margin-bottom: 4rem;
+
+    &-heading {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+
+        h3 { color: var(--text-primary); font-size: 1.35rem; margin: 0 0 0.25rem; }
+        p { color: var(--text-secondary); margin: 0; font-size: 0.95rem; }
+    }
+}
+
+.project-group-icon {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    flex: 0 0 2.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--accent-color);
+    background: var(--secondary-bg);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+
+    .project-card {
+        margin-bottom: 0;
+        padding: 1.75rem;
+    }
+
+    .project-title {
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .project-description { margin-bottom: 1.5rem; }
+}
+
+.project-type {
+    display: inline-block;
+    color: var(--accent-color);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.9rem;
+    text-transform: uppercase;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
 .project-card {
     margin-bottom: 2rem;
 
@@ -617,4 +700,13 @@ body {
     .contact-grid {
         gap: 1.5rem;
     }
+
+    .projects-intro {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 2.5rem;
+    }
+
+    .project-grid { grid-template-columns: 1fr; }
+    .project-group { margin-bottom: 3rem; }
 }

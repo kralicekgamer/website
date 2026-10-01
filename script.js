@@ -14,6 +14,17 @@
   });
   syncToggle();
 
+  const menu = document.getElementById('nav-menu');
+  const setMenu = (open) => {
+    nav.classList.toggle('ds-nav--open', open);
+    menu.setAttribute('aria-expanded', String(open));
+    menu.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    menu.firstElementChild.className = open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+  };
+  menu.addEventListener('click', () => setMenu(!nav.classList.contains('ds-nav--open')));
+  links.forEach(l => l.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+
   const onScroll = () => {
     let cur = 'home';
     ids.forEach(id => { const el = document.getElementById(id); if (el && el.getBoundingClientRect().top < 200) cur = id; });

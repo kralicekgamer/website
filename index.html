@@ -3,8 +3,101 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Matěj Adamec — Cybersecurity lover &amp; developer</title>
-<meta name="description" content="Portfolio of Matěj Adamec (Kralyk) — Python developer focused on cybersecurity, Linux and networking.">
+<title>Matěj Adamec (Kralyk) | Python, Linux &amp; Cybersecurity</title>
+<meta name="description" content="Portfolio of Matěj Adamec (Kralyk) — Python developer focused on backend systems, Linux infrastructure, networking, cybersecurity and embedded hardware.">
+<meta name="author" content="Matěj Adamec">
+<link rel="canonical" href="https://kralyk.dev/">
+<link rel="icon" href="/favicon.ico" sizes="16x16">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon.png">
+<link rel="apple-touch-icon" href="/icon.png">
+<meta name="theme-color" content="#1e1e2e">
+
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="kralyk.dev">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://kralyk.dev/">
+<meta property="og:title" content="Matěj Adamec — Python Developer &amp; Cybersecurity Enthusiast">
+<meta property="og:description" content="Python developer focused on backend systems, Linux, networking, cybersecurity, virtualization and embedded systems.">
+<meta property="og:image" content="https://kralyk.dev/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Matěj Adamec — Cybersecurity lover &amp; developer">
+<meta property="profile:first_name" content="Matěj">
+<meta property="profile:last_name" content="Adamec">
+<meta property="profile:username" content="kralyk">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Matěj Adamec — Python Developer &amp; Cybersecurity Enthusiast">
+<meta name="twitter:description" content="Python developer focused on backend systems, Linux, networking, cybersecurity, virtualization and embedded systems.">
+<meta name="twitter:image" content="https://kralyk.dev/assets/og.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://kralyk.dev/#website",
+      "url": "https://kralyk.dev/",
+      "name": "Matěj Adamec",
+      "alternateName": "kralyk.dev",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://kralyk.dev/#person"
+      }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://kralyk.dev/#page",
+      "url": "https://kralyk.dev/",
+      "name": "Matěj Adamec (Kralyk) | Python, Linux & Cybersecurity",
+      "isPartOf": {
+        "@id": "https://kralyk.dev/#website"
+      },
+      "mainEntity": {
+        "@id": "https://kralyk.dev/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://kralyk.dev/#person",
+      "name": "Matěj Adamec",
+      "alternateName": [
+        "Kralyk",
+        "KralicekGamer"
+      ],
+      "url": "https://kralyk.dev/",
+      "image": "https://kralyk.dev/assets/photo.jpeg",
+      "email": "mailto:kralyk@kralyk.dev",
+      "description": "Python developer focused on backend systems, Linux, networking, cybersecurity, virtualization and embedded systems.",
+      "nationality": {
+        "@type": "Country",
+        "name": "Czech Republic"
+      },
+      "knowsAbout": [
+        "Python",
+        "REST APIs",
+        "Linux",
+        "Linux server administration",
+        "Cybersecurity",
+        "Ethical hacking",
+        "Computer networking",
+        "Docker",
+        "Proxmox",
+        "Virtualization",
+        "Raspberry Pi",
+        "ESP32",
+        "Arduino"
+      ],
+      "sameAs": [
+        "https://github.com/kralicekgamer",
+        "https://instagram.com/kralyk._",
+        "https://www.linkedin.com/in/mat%C4%9Bj-adamec-463048322/",
+        "https://blog.kralyk.dev/"
+      ]
+    }
+  ]
+}
+</script>
 <script>try{var t=localStorage.getItem('theme');if(t==="latte")document.documentElement.dataset.theme="latte"}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +109,9 @@
   <nav class="ds-nav" id="nav">
     <div class="ds-nav__inner">
       <a class="ds-nav__brand" href="#home">~<span>/</span>kralyk</a>
-      <div class="ds-nav__links"><a class="ds-nav__link" href="#about" data-nav="about">About Me</a><a class="ds-nav__link" href="#skills" data-nav="skills">Skills</a><a class="ds-nav__link" href="#projects" data-nav="projects">Projects</a><a class="ds-nav__link" href="#contact" data-nav="contact">Contact</a></div>
+      <div class="ds-nav__links" id="nav-links"><a class="ds-nav__link" href="#about" data-nav="about">About Me</a><a class="ds-nav__link" href="#skills" data-nav="skills">Skills</a><a class="ds-nav__link" href="#projects" data-nav="projects">Projects</a><a class="ds-nav__link" href="#contact" data-nav="contact">Contact</a></div>
       <div class="ds-nav__right">
+        <button type="button" class="ds-nav__menu" id="nav-menu" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
         <button type="button" role="switch" aria-checked="false" aria-label="Toggle dark mode" class="ds-toggle" id="theme-toggle">
           <span class="ds-toggle__thumb"></span>
           <span class="ds-toggle__icon ds-toggle__icon--sun"><i class="fa-solid fa-sun"></i></span>
@@ -34,7 +128,7 @@
         <p>Cybersecurity lover &amp; developer</p>
         <a class="ds-btn ds-btn--primary ds-btn--lg" href="#projects">Lookout for projects<i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
       </div>
-      <div class="hero__photo"><img src="assets/photo.jpeg" alt="Matěj Adamec"></div>
+      <div class="hero__photo"><img src="assets/photo.jpeg" alt="Portrait of Matěj Adamec standing in a forest" width="440" height="550" fetchpriority="high"></div>
     </section>
 
     <section id="about">
@@ -55,7 +149,7 @@
         <div class="ds-card skill">
           <div class="skill__head">
             <span class="skill__icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
-            <h4>Programming</h4>
+            <h3>Programming</h3>
             <span class="skill__count">05</span>
           </div>
           <ul>
@@ -69,7 +163,7 @@
         <div class="ds-card skill">
           <div class="skill__head">
             <span class="skill__icon"><i class="fa-solid fa-server" aria-hidden="true"></i></span>
-            <h4>Systems &amp; Infrastructure</h4>
+            <h3>Systems &amp; Infrastructure</h3>
             <span class="skill__count">05</span>
           </div>
           <ul>
@@ -83,7 +177,7 @@
         <div class="ds-card skill">
           <div class="skill__head">
             <span class="skill__icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
-            <h4>Networking &amp; Security</h4>
+            <h3>Networking &amp; Security</h3>
             <span class="skill__count">03</span>
           </div>
           <ul>
@@ -95,7 +189,7 @@
         <div class="ds-card skill">
           <div class="skill__head">
             <span class="skill__icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></span>
-            <h4>Hardware &amp; Embedded</h4>
+            <h3>Hardware &amp; Embedded</h3>
             <span class="skill__count">03</span>
           </div>
           <ul>
@@ -107,7 +201,7 @@
         <div class="ds-card skill">
           <div class="skill__head">
             <span class="skill__icon"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></span>
-            <h4>Tools &amp; Workflow</h4>
+            <h3>Tools &amp; Workflow</h3>
             <span class="skill__count">04</span>
           </div>
           <ul>

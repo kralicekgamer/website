@@ -1,41 +1,25 @@
-// Smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
+(() => {
+  const root = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
+  const nav = document.getElementById('nav');
+  const links = [...document.querySelectorAll('[data-nav]')];
+  const ids = ['home', 'about', 'skills', 'projects', 'contact'];
 
-// Navbar effects on scroll
-window.addEventListener('scroll', function () {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
+  const syncToggle = () => toggle.setAttribute('aria-checked', String(root.dataset.theme === 'mocha'));
+  toggle.addEventListener('click', () => {
+    const next = root.dataset.theme === 'mocha' ? 'latte' : 'mocha';
+    root.dataset.theme = next;
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    syncToggle();
+  });
+  syncToggle();
 
-// Animate on scroll
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-};
-
-const observer = new IntersectionObserver(function (entries) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animated');
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('.animate-on-scroll').forEach(el => {
-    observer.observe(el);
-});
+  const onScroll = () => {
+    let cur = 'home';
+    ids.forEach(id => { const el = document.getElementById(id); if (el && el.getBoundingClientRect().top < 200) cur = id; });
+    nav.classList.toggle('ds-nav--scrolled', window.scrollY > 8);
+    links.forEach(l => l.classList.toggle('ds-nav__link--active', l.dataset.nav === cur));
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
